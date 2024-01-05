@@ -10,13 +10,26 @@
       "ft ft ft ft ft ft ft ft ft ft ft ft";
   }
 
+  .navbar {
+    justify-content: flex-start;
+    padding: 15px 150px;
+  }
+
+  .navbar a {
+    font-size: 20px;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: white;
+  }
+
   .blog-post-card {
     margin: 2vh 15vw 2vh 1vw;
     display: grid;
     gap: 10px;
     grid-template-columns: 33% 25% 8dvb 33%;
-    grid-template-rows: 50% 45%;
+    grid-template-rows: 5% 45% 45%;
     grid-template-areas:
+      "hd hd hd hd"
       "one one two two"
       "three four four five";
   }
@@ -43,7 +56,7 @@
     margin: 2vh 1vw 2vh 15vw;
     padding: 2vh 0vw 2vh 1vw;
     border-right: #d3bccc solid;
-    border-left: #d3bccc solid;
+
     border-top: none;
   }
 }

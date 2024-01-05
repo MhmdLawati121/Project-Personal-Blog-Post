@@ -15,7 +15,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 1fr 6fr 5fr 1fr;
+  grid-template-rows: 1fr 10fr 5fr 1fr;
   grid-template-columns: 1fr;
   grid-gap: 10px;
   grid-template-areas:
@@ -35,12 +35,14 @@ body {
 .navbar {
   display: flex;
   text-decoration: none;
-  justify-content: space-around;
+  justify-content: center;
   list-style-type: none;
   flex-direction: row;
-  padding: 15px 15px;
+  padding: 15px 10px;
 }
 .navbar a {
+  font-size: 20px;
+  padding: 0px 15px;
   text-decoration: none;
   color: white;
 }
@@ -49,7 +51,7 @@ body {
 }
 
 .blog-post-card {
-  margin: 2vh 10vw 2vh 10vw;
+  margin: 2vh 5vw 2vh 5vw;
   height: auto;
   width: auto;
   background-color: #fffff4;
@@ -60,6 +62,10 @@ body {
   gap: 2vh;
   justify-content: flex-start;
   align-items: center;
+}
+
+.blog-post-card h1 {
+  font-size: 3em;
 }
 
 .card {
@@ -87,18 +93,28 @@ body {
   margin: 10px 10px;
 }
 
-button {
+.card-content a {
+  width: 80px;
   height: 100%;
-  padding: 2%;
+}
+
+.card-content button {
+  height: 100%;
+  width: 100%;
   background-color: #4a306d;
   color: #fff;
   border: none;
   border-radius: 12px;
 }
 
-.card-text h2,
+.card-content button:hover {
+  background-color: #a167a5;
+}
+
+.card-text h3,
 p {
   margin: 0;
+  font-size: 1.3em;
 }
 
 .card:hover {
@@ -143,9 +159,29 @@ p {
   border-bottom: solid #d3bccc 3px;
 }
 
+.side-bar h2 {
+  width: fit-content;
+  border-bottom: solid #d3bccc 2px;
+}
+
+.side-bar ul {
+  list-style-type: circle;
+}
+
+.side-bar a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #0e273c;
+}
+
 .footer {
   height: auto;
   width: 100%;
   background-color: #0e273c;
   grid-area: ft;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
