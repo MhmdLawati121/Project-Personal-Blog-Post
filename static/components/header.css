@@ -1,0 +1,39 @@
+@import url("../css/style.css");
+
+.header {
+  height: fit-content;
+  width: 100%;
+  background-color: var(--dark-blue);
+  grid-area: hd;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  flex-direction: row;
+  padding: 15px 10px;
+}
+
+.navbar a {
+  font-size: 20px;
+  padding: 0px 15px;
+  text-decoration: none;
+  color: var(--white);
+}
+.navbar a:hover {
+  color: var(--light-pink);
+}
+
+@media (min-width: 900px) {
+  .navbar {
+    justify-content: flex-start;
+    padding: 15px 150px;
+  }
+
+  .navbar a {
+    font-size: 20px;
+    padding: 0px 20px;
+    font-weight: bold;
+  }
+}

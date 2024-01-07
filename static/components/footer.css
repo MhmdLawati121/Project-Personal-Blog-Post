@@ -1,0 +1,14 @@
+@import url("../css/style.css");
+
+.footer {
+  height: 100%;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  background-color: var(--dark-blue);
+  grid-area: ft;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}

@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&family=Rubik:wght@300&display=swap");
+
+:root {
+  --gray: #444;
+  --dark-blue: #0e273c;
+  --purple: #4a306d;
+  --pink: #a167a5;
+  --light-pink: #d3bccc;
+  --pale: #e8d7f1;
+  --white: #fffff4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inria Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
+  background-color: var(--white);
+}
+
+h1 {
+  color: var(--dark-blue);
+  font-size: 2.5em;
+  width: fit-content;
+  border-bottom: solid var(--light-pink) 3px;
+}
+
+h2 {
+  font-size: 2em;
+  width: fit-content;
+  border-bottom: solid var(--light-pink) 2px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.3em;
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: minmax(100px, 4fr);
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "hd"
+    "mn"
+    "sd"
+    "ft";
+}

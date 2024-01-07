@@ -1,0 +1,30 @@
+@import url("../css/style.css");
+
+.side-bar {
+  grid-area: sd;
+  margin: 2vh 10vw 2vh 10vw;
+}
+
+.side-bar ul {
+  list-style-type: circle;
+}
+
+.side-bar a {
+  text-decoration: none;
+  font-style: italic;
+  font-size: 1.2em;
+  color: var(--dark-blue);
+}
+
+.side-bar a:hover {
+  color: var(--pink);
+}
+
+@media (min-width: 900px) {
+  .side-bar {
+    margin: 2vh 1vw 2vh 15vw;
+    padding: 2vh 0vw 2vh 1vw;
+    border-right: var(--light-pink) solid;
+    border-top: none;
+  }
+}
